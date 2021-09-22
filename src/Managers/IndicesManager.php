@@ -144,7 +144,8 @@ class IndicesManager extends AbstractManager
 
 		$params = [
 			'index' => $index->getInternalName(),
-			'body'  => $index->getBody()
+			'body'  => $index->getBody(),
+			'include_type_name' => true,
 		];
 
 //		var_dump($params);
